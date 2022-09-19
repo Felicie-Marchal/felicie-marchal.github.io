@@ -1,0 +1,21 @@
+/*
+selecteur {
+    propriété : valeur
+}
+*/
+
+body{
+    background: mediumpurple;
+    font-family: americantypewriter,'Courier New', Courier, monospace;
+}
+
+h1,h2 {
+   color:rgb(102, 191, 236);
+   font-family: americantypewriter,'Courier New', Courier, monospace;
+}
+
+   .wrap{
+    background: rgb(238, 94, 5);
+    width: 640px
+    margin:auto;
+   }
