@@ -1,0 +1,135 @@
+/*
+selecteur {
+    propriété : valeur
+}
+*/
+
+@font-face{
+    font-family: 'hangul';
+    src: url(fonts/vtf_hngl-webfont.woff)format('woff'); 
+    }
+    
+@font-face{
+        font-family: 'roboto';
+        src: url(fonts/Roboto-ThinItalic-webfont.woff)format('woff');
+        
+        }
+    
+body {
+    background: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+h1{
+
+    font-size: 150px;
+    font-family: 'hangul';
+    padding-bottom: 50px;
+    border-bottom: solid;
+    border-width: 1px;
+    text-align: center;
+    
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+} 
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    max-width: 960px;
+    margin: auto;
+    /* background: red; */
+}
+
+.home{
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+.nav{
+    text-align: right;
+}
+
+.center{
+    padding-top: 50px;
+    text-align: center;
+    display: block;
+    margin:auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:25px;
+    margin-top: 100px;
+
+}
+
+.grid a:nth-of-type(4){
+    grid-column: span 2;
+}
+
+
+
+
+
+
+
+/* -----------------------------animation----------------------------------------*/
+        /* unvisited link */
+        a:link {
+            color:black;
+            font-weight: normal;
+        }
+
+        /* visited link */
+        a:visited{
+            color:black;
+        }
+
+        /* mouse over link */
+        a:hover{
+            color:hotpink;
+        }
+
+        /* selected link */
+        a:active{
+            color: hotpink;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a:visited{
+            text-decoration: none;
+        }
+
+        a:hover{
+            text-decoration: none;
+        }
+
+        .menu{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .meni.item-nav{
+            padding: 10px 0;
+            text-transform: uppercase;
+            font-size: x-large;
+            border-bottom: 2px solid black;
+            width: fit-content
+        }
+
