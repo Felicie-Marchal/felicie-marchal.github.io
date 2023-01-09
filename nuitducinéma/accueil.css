@@ -1,0 +1,188 @@
+/*
+selecteur {
+    propriété : valeur
+}
+*/
+
+@font-face{
+    font-family: 'Facade';
+    src: url(fonts/Facade-Ouest.woff) format('woff'); 
+    }
+    
+ @font-face{
+        font-family: 'courier prime';
+        src: url(fonts/CourierPrimeBold.woff) format('woff'); 
+        }
+        @font-face{
+            font-family: 'courier prime';
+            src: url(fonts/CourierPrime.woff) format('woff'); 
+            }
+*{
+    margin: 0;
+}
+
+
+html{
+    margin:0 8px;
+}
+
+body{
+    max-width: 1040px;
+    margin:auto;
+    font-family: 'Facade';
+    background: rgb(0, 0, 0);
+    color:white;
+    font-size: 20px;
+}
+
+h1{
+    font-style: normal;
+    font-weight: 100;
+    font-size: 63px;
+    line-height: 76px;
+}
+
+header{
+    margin-bottom: 48px;
+}
+header img{
+    display: block;
+    margin:24px auto;
+}
+
+.title{
+    border-bottom: 3px solid white;
+    margin-bottom: 90px;
+    margin-top: 140px;
+}
+
+.title img{
+    display: inline-block;
+}
+
+.title h1{
+    display: inline-block;
+    margin-left: 12px;
+    color: currentColor;
+}
+
+nav a{ 
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+    
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:25px;
+    margin-top: 100px;
+}
+.gridmovie{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:25px;
+    margin-top: 100px;
+    font-size: 13px;
+}
+
+.acces p{
+    grid-column: 1/2;
+}
+.acces .map{
+    grid-column: 2/-1;
+    grid-row: 1/5;
+}
+
+p{
+    color: white;
+    font-family: 'courier prime';
+}
+
+.gridrectangle{
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+margin-left: 15%;
+margin-right: 15%;
+margin-top: 13%;
+gap: 15px;
+    }
+
+
+.rectangle{
+    display:flex;
+    justify-self: center;
+    justify-content: center;
+    border: 3px solid rgb(58, 179, 231);
+    color:rgb(58, 179, 231);
+    width: 70%;
+    border-radius: 20px;
+    text-align:center;
+    font-size: 15px;
+    grid-column: span 1px;
+    margin-bottom: 15px;
+
+}
+
+.rectangle p{
+    padding: 10px 30px 20px;
+}
+
+/* -----------------------------animation----------------------------------------*/
+
+     /* unvisited link */
+     a:link {
+        color:rgb(255, 255, 255);
+        font-weight: normal;
+    }
+
+    /* visited link */
+    a:visited{
+        color:rgb(255, 255, 255);
+    }
+
+    /* mouse over link */
+    a:hover{
+        color:rgb(58, 179, 231);
+    }
+
+    /* selected link */
+    a:active{
+        color: rgb(58, 179, 231);
+    }
+
+    a:link{
+        text-decoration: none;
+    }
+
+    a:visited{
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: none;
+    }
+
+    .menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .meni.item-nav{
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-size: x-large;
+        border-bottom: 2px solid black;
+        width: fit-content
+    }
+
